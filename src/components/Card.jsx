@@ -1,17 +1,14 @@
-// const person = [
-//   { name: "Marla", age: 30, position: "programador" },
-//   { name: "Miguel", age: 25, position: "programador" },
-//   { name: "Sole", age: 41, position: "programador" },
-//   { name: "Lucas", age: 30, position: "programador" },
-//   { name: "Nati", age: 50, position: "diseñador gráfico" },
-// ];
+import React from "react";
+import "../../src/index.css";
 
-const Card = (props) => {
+const person = { name: "Miguel", age: 25, position: "programador" };
+
+const Card = () => {
   return (
-    <div class="person">
-      <h2>Name: {props.name}</h2>
-      <h3>Position: {props.position}</h3>
-      <p>Age: {props.age}</p>
+    <div className="person">
+      <h2>Name: {person.name}</h2>
+      <h3>Position: {person.position}</h3>
+      <p>Age: {person.age}</p>
     </div>
   );
 };
