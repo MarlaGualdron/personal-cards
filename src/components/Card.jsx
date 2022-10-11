@@ -1,20 +1,62 @@
 import React from "react";
 import "../../src/index.css";
+import Marla from "../images/Marla.jpg";
 
 const person = [
-  { id: 1, name: "Marla", age: 24, position: "programador" },
-  { id: 2, name: "Miguel", age: 29, position: "programador" },
-  { id: 3, name: "Sole", age: 30, position: "programador" },
-  { id: 4, name: "Lucas", age: 30, position: "programador" },
-  { id: 5, name: "Nati", age: 30, position: "diseñador gráfico" },
+  {
+    id: 1,
+    name: "Marla",
+    age: 30,
+    position: "programador",
+    linkdn: "https://www.linkedin.com/in/marla-gualdron/",
+    image: Marla,
+  },
+  {
+    id: 2,
+    name: "Miguel",
+    age: 25,
+    position: "programador",
+    linkdn: "",
+    image: "",
+  },
+  {
+    id: 3,
+    name: "Sole",
+    age: 41,
+    position: "programador",
+    linkdn: "",
+    image: "",
+  },
+  {
+    id: 4,
+    name: "Lucas",
+    age: 30,
+    position: "programador",
+    linkdn: "",
+    image: "",
+  },
+  {
+    id: 5,
+    name: "Nati",
+    age: 50,
+    position: "diseñador gráfico",
+    linkdn: "",
+    image: "image",
+  },
 ];
 
 const CardListItem = (props) => {
   return (
-    <div className="card">
-      <h2>Name: {props.person.name}</h2>
-      <h3>Position: {props.person.position}</h3>
-      <p>Age: {props.person.age}</p>
+    <div className="container">
+      <div className="card">
+        <img src={props.person.image} alt="profile" />
+        <h2>Name: {props.person.name}</h2>
+        <h3>Position: {props.person.position}</h3>
+        <h3>Age: {props.person.age}</h3>
+        <p>
+          <a href={props.person.linkdn}>Linkdn</a>
+        </p>
+      </div>
     </div>
   );
 };
