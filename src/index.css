@@ -25,6 +25,11 @@
   text-align: center;
 }
 
+img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
 h1 {
   font-size: 30px;
 }
